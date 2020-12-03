@@ -1,0 +1,309 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+}
+body{
+	background: #f1f1f1
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f4f4f4;
+	height: 50px;
+	color: #333;
+	padding: 0 8%;
+	overflow: hidden;
+}
+
+header span{
+	color: royalblue;
+}
+a{
+	text-decoration: none;
+}
+header nav{
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease-out;
+}
+
+header .nav a{
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+	padding: 20px 20px;
+	letter-spacing: 1px;
+	transition: all 0.2s;
+}
+
+header .nav  a:hover{
+	background: royalblue;
+	color: white;
+}
+
+header .burger > div{
+	height: 4px;
+	width: 25px;
+	background: #333;
+	margin-bottom: 3px;
+}
+
+header .burger{
+	cursor: pointer;
+	display: none;
+	transition: all 0.3s;
+}
+
+header .burger:hover{
+	opacity: 0.8;
+}
+
+form button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+a, button{
+	transition: 0.3s all;
+}
+
+section {
+	width: 60%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+/*table th{
+	background: #333;
+	color: #f1f1f1;
+}*/
+.box {
+	box-shadow: 0 0px 20px 0 #e5e5e5
+}
+#login main{
+	width: 45%;
+	margin: auto;
+	background-color: white;
+	padding: 35px 35px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	margin-top: 50px;
+	box-shadow: 0 0px 20px 0 black
+}
+
+
+#login form{
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+form input, button{
+	padding: 15px 15px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 8px;
+	border: 2px solid #f1f1f1;
+	background: #f1f1f1
+}
+#login	form button{
+	background: royalblue;
+	color: white;
+	
+}
+
+#login p{
+	font-size: 12px;
+	margin-top: 15px;
+	text-align: center;
+}
+#login .logo img{
+	width: 95px;
+	margin-bottom: -20px
+}
+#login .logo {
+	color: #333;
+	font-size: 24px;
+}
+#login .logo span{
+	color: royalblue
+}
+
+
+/*main, menu, {
+	display: flex;
+	width: 100%;
+	margin-bottom: 20px
+}*/
+
+#dkm main a:hover{
+	cursor: pointer;
+	box-shadow: 0 0px 20px 0 #d1d1d1
+}
+#dkm main a, #dkm main div {
+	width: 100%;
+	padding: 20px 40px;
+	border-radius: 10px;
+	background: white;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#dkm menu, #dkm main{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+
+#dkm menu .bulan{
+	width: 40%;
+	margin-right: 10px;
+	background: white;
+	color: #333;
+	display: flex;
+	border-radius: 10px;
+	justify-content: space-between;
+}
+
+#dkm menu .bulan form{
+	width: 100%;
+border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+#dkm menu .bulan form button{
+	background: royalblue;
+	color: white;
+	height: 100%;
+	border-radius: 10px;
+}
+#dkm menu .bulan select{
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none
+}
+
+#dkm menu .latest {
+	width: 80%;
+	padding: 20px 40px;
+	border-radius: 10px;
+	background: white;
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+#dkm menu .latest span{
+	font-size: 24px;
+	font-weight: bold
+}
+
+#dkm main  span{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#dkm table{
+	width: 100%;
+	background: white;
+	
+	
+}
+#dkm table tr{
+	text-align: center;
+	border: 2px solid #e3e3e3;
+}
+#dkm table th, td{
+	padding: 10px 15px;
+}
+
+.konten{
+	/*width: 100%;*/
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin-bottom: 50px;
+}
+.konten .tab {
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+.konten .tab a{
+	padding: 10px 15px;
+	border:none;
+	background: #e3e3e3;
+	border-radius: 5px;
+	color: #444;
+	margin-right: 5px
+}
+.konten .tab a:hover{
+	cursor: pointer;
+	opacity: 0.9;
+}
+.konten .data{
+	padding: 10px 20px
+}
+.konten .data h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+/*input*/
+#input main, #output main{
+	width: 50%;
+	margin: auto;
+	background-color: white;
+	padding: 35px 35px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 0px 20px 0 #e5e5e5
+}
+#input main form, #input main form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+/*#input main form input{
+	border: 2px solid #f1f1f1;
+	background: #f1f1f1
+}*/
+#input .alert{
+	background: coral;
+	color: white;
+	padding: 15px 35px;
+	width: 50%;
+	margin: auto;
+	border-radius: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#input main p{
+	font-size: 12px
+}
+
+/*#input main form input, button{
+				padding: 15px 15px;
+				border-radius: 5px;
+				margin-bottom: 5px
+			}*/
+#input main form button{
+				background: royalblue;
+				color: white;
+				border: none;
+			}
