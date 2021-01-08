@@ -40,7 +40,10 @@ $saldo = $sumTI - $sumTO;
 ?>
 <html>
 	<head>
-		<title>Halaman Admin</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MYDKM - Admin</title>
+		<link rel="icon" href="img/logo.png">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
 	</head>
@@ -65,8 +68,8 @@ $saldo = $sumTI - $sumTO;
 				<div class="bulan box">
 					<form action="" method="post">
 					<select name="bulan" id="bulan">
-						<option value="Januari">Januari</option>
-						<option value="Februari">Februari</option>
+						<option value="January">Januari</option>
+						<option value="February">Februari</option>
 						<option value="Oktober">Oktober</option>
 						<option value="November">November</option>
 
@@ -107,7 +110,7 @@ $saldo = $sumTI - $sumTO;
 			<div class="konten box">
 				
 
-				<div id="Pemasukan" class="data">
+				<div id="Pemasukan" class="data" style="overflow-x: auto">
 					<h1>Pemasukan</h1>
 				  <table >
 					<tr>
@@ -141,14 +144,14 @@ $saldo = $sumTI - $sumTO;
 				</table>
 				</div>
 
-				<div id="Pengeluaran" class="data" style="display:none">
+				<div id="Pengeluaran" class="data" style="display:none;overflow-x: auto">
 					<h1>Pengeluaran</h1>
-				  <table >
+				  <table>
 					<tr>
 						<th>No</th>
 						<th>Nominal</th>
 						<th>Keterangan</th>
-						<th>Untuk</th>
+						<th>Bulan</th>
 					</tr>
 					<?php $no =1 ?>
 					<?php while ($row = mysqli_fetch_assoc($resultPeng)) : ?>

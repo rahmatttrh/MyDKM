@@ -1,4 +1,4 @@
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px){
 	body{
 		font-size: 12px;
 	}
@@ -48,6 +48,10 @@
 	#login main{
 		width: 85%;
 	}
+	#dkm menu{
+		flex-direction: column;
+	}
+
 
 	#dkm menu .bulan{
 		width: 50%;

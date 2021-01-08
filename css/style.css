@@ -92,8 +92,6 @@ section {
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
-	margin-top: 50px;
-	box-shadow: 0 0px 20px 0 black
 }
 
 
@@ -116,9 +114,16 @@ form input, button{
 	
 }
 
-#login p{
-	font-size: 12px;
+
+
+#login .footer{
+	font-size: 14px;
 	margin-top: 15px;
+	text-align: center;
+}
+
+#login .info{
+	font-size: 12px;
 	text-align: center;
 }
 #login .logo img{
@@ -307,3 +312,77 @@ border-radius: 10px;
 				color: white;
 				border: none;
 			}
+
+
+@media screen and (max-width: 500px){
+	body{
+		font-size: 12px;
+	}
+	header nav{
+		height: 100vh;
+		width: 50%;
+		position: absolute;
+		top:50px;
+		left: -100%;
+		background: #f4f4f4;
+
+		display: flex;
+		flex-direction: column;
+		overflow:hidden;
+	}
+
+	header nav a{
+		font-size: 14px;
+		color: #333;
+		font-weight: bold;
+		width: 100%;
+		padding: 20px 60px;
+	}
+	
+	header .burger{
+		display: block;
+	}
+
+	.navmobile{
+		left: 0;
+	}
+
+	section {
+		width: 90%;
+	}
+	#dkm main{
+		flex-direction: column;
+	}
+	#dkm .box{
+		margin-bottom:10px;
+	}
+
+	#input main, #output main, #login main{
+		width: 85%;
+	}
+
+	#login main{
+		width: 85%;
+	}
+
+	#dkm menu .bulan{
+		width: 50%;
+	}
+	#dkm menu .latest {
+	width: 50%;
+}
+#dkm menu .latest{
+	
+	padding: 20px 20px;
+}
+.konten{
+	margin-bottom: 50px;
+}
+#dkm menu .latest span{
+	font-size: 16px;
+	font-weight: bold
+}
+table{
+	font-size: 12px;
+}
+}

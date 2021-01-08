@@ -1,2 +1,0 @@
-# naminagedzul
-my projects
